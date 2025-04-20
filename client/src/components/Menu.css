@@ -1,0 +1,47 @@
+.menu-container {
+  padding: 20px;
+  text-align: center;
+  color: #080808;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  border: 1px solid #080808;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  background-color: #adf9ef;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  color: #080808;
+}
+
+.menu-item h3 {
+  margin: 10px 0;
+}
+
+.menu-item button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+}
+
+.menu-item button:hover {
+  background-color: #d9363e;
+}
+
+@media (max-width: 600px) {
+  .menu-item {
+    width: 90%;
+  }
+}

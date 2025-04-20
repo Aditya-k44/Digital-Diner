@@ -1,0 +1,44 @@
+.history-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.history-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.history-container input {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: darksalmon;
+  color: black;
+  outline: none;
+}
+
+.history-container button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.history-container button:hover {
+  background-color: #d9363e;
+}
+.history-container h4 {
+  margin: 10px 0 0;
+}
+
+.order-block {
+  color: black;
+}
