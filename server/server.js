@@ -12,7 +12,12 @@ const PORT = process.env.PORT || 5000;
 await connectDB();
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://marvelous-paletas-b3c10e.netlify.app/",
+    credentials: true,
+  })
+);
 
 app.get("/", (req, res) => {
   res.send("API is Working");
