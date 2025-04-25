@@ -19,6 +19,7 @@ const registerUser = async (name, phone, password) => {
     [name, phone, hashedPassword]
   );
 
+  console.log("New user created:", newUser.rows[0]);
   return newUser.rows[0];
 };
 

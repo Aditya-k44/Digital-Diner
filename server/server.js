@@ -14,7 +14,7 @@ await connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: "*",
+    origin: "https://marvelous-paletas-b3c10e.netlify.app/",
     methods: ["GET", "POST"],
     credentials: true,
   })

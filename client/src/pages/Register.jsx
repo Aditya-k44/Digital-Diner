@@ -12,10 +12,16 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/users/register", { name, phone, password });
+      const response = await axios.post("/users/register", {
+        name,
+        phone,
+        password,
+      });
+      console.log("Registration response:", response.data);
       alert("Registration successful. Please login.");
       navigate("/login");
     } catch (err) {
+      console.error("Registration failed:", err.response?.data || err.message);
       alert("Registration failed.");
     }
   };

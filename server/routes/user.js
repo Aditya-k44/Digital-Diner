@@ -8,12 +8,18 @@ userRouter.post("/register", async (req, res) => {
   const { name, phone, password } = req.body;
 
   try {
+    if (!name || !phone || !password) {
+      return res.status(400).json({ error: "All fields are required!" });
+    }
+
+    console.log("Received data:", { name, phone, password });
     const newUser = await registerUser(name, phone, password);
     res.status(201).json({
       message: "User created successfully!",
       user: newUser,
     });
   } catch (error) {
+    console.error("Error during registration:", error.message);
     res.status(400).json({ error: error.message });
   }
 });
